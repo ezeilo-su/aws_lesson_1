@@ -5,7 +5,7 @@
     "lesson1": "bin/lesson1.js"
   },
   "scripts": {
-    "prettier": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "prettier": "prettier --config .prettierrc './**/*.ts' --write",
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",

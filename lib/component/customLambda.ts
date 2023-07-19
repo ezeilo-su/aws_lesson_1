@@ -1,9 +1,9 @@
-import { Construct } from "constructs";
-import { StackProps } from "aws-cdk-lib";
-import { IFunction, Runtime } from "aws-cdk-lib/aws-lambda";
-import { NodejsFunction } from "aws-cdk-lib/aws-lambda-nodejs";
+import { Construct } from 'constructs';
+import { StackProps } from 'aws-cdk-lib';
+import { IFunction, Runtime } from 'aws-cdk-lib/aws-lambda';
+import { NodejsFunction } from 'aws-cdk-lib/aws-lambda-nodejs';
 
-import { Lesson1Stack } from "../lesson1-stack";
+import { Lesson1Stack } from '../lesson1-stack';
 
 interface CustomLambdaProps extends StackProps {
   entry: string;
@@ -27,7 +27,7 @@ export class CustomLambda extends Construct {
       entry,
       functionName,
       memorySize: memorySize || CustomLambda.DEFAULT_MEMORY,
-      runtime: runtime ?? CustomLambda.DEFAULT_RUNTIME,
+      runtime: runtime ?? CustomLambda.DEFAULT_RUNTIME
     });
   }
 }
